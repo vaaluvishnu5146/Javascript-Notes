@@ -1,0 +1,19 @@
+HOW A PROGRAM WILL EXECUTE?
+1. Code that you write will be compiled - Compilation is a process where Human understandable program will be
+coverted to machoie understandable language.
+2. Run the binary code - Giving input to the computer in the binary format 
+(011010101000101 101010000 11110000)
+
+
+WHat is javascript?
+1. Scripting language
+2. Programming language
+3. Its a language of web
+4. Interpretter language
+
+JAVSCRIPT:
+JUST IN TIME COMPILER (JIT)
+console.log('Hey all'); // Looks like this (011010101000101 101010000 11110000)
+1. RUN THE CODE
+
+
