@@ -1,0 +1,13 @@
+{
+  "name": "Ashish",
+  "mobileNumber": "9080706089",
+  "country": "IN",
+  "age": 24,
+  "isMarried": false,
+  "DOB": "16/1/1990",
+  "interests": ["Playing cricket", "Coding"],
+  "address": {
+    "line1": "",
+    "line2": ""
+  }
+}
