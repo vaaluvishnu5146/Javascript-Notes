@@ -157,3 +157,23 @@
 // 4. FAT ARROW FUNCTION
 
 // TOMORROW DAY 4
+var greet = (cb = () => {}) => cb("Good Afternoon");
+greet((message = "") => {
+  console.log(message);
+});
+
+/// FUNCTION CONSTRUCTOR
+// WILL HELPS US TO CREATE A FUNCTION PROGRAMAITCALLY
+// IT WILL RETRUN ANONYMOUS FUNCTION
+// WE CAN ASSIGN IT TO A VARIABLE AND CALL THIS FUNCTION
+
+// {
+//     arg1,
+//     arg2,
+//     return arg1 + arg2
+// }
+
+const sum = new Function("x", "y", "return x + y");
+console.log(sum);
+console.log(sum(10, 20));
+console.log(sum(100, 200));

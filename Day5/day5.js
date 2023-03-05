@@ -114,44 +114,47 @@ ALL THE FUNCTIONALITIES RELATED TO THE DATATYPE OF THE VARIABLE
 // SYNTAX:
 
 // class className {
-
-//     constructor() {
-
-//     }
-
+//   constructor() {}
 // }
 
 // EXAMPLE 1: CREATE FOOD CLASS
 
-// class Food {
-//   constructor(
-//     name = "",
-//     ingredients = [],
-//     addons = [],
-//     cookingSteps = [],
-//     timeToCook = 0,
-//     timeUnit = "",
-//     color = "",
-//     quantity = 0,
-//     quantityUnit = "",
-//     foodType = ""
-//   ) {
-//     this.name = name;
-//     this.ingredients = ingredients;
-//     this.addons = addons;
-//     this.cookingSteps = cookingSteps;
-//     this.timeToCook = timeToCook;
-//     this.timeUnit = timeUnit;
-//   }
+class Food {
+  constructor(
+    name = "",
+    ingredients = [],
+    addons = [],
+    cookingSteps = [],
+    timeToCook = 0,
+    timeUnit = "",
+    color = "",
+    quantity = 0,
+    quantityUnit = "",
+    foodType = ""
+  ) {
+    this.name = name;
+    this.ingredients = ingredients;
+    this.addons = addons;
+    this.cookingSteps = cookingSteps;
+    this.timeToCook = timeToCook;
+    this.timeUnit = timeUnit;
+  }
 
-//   print() {
-//     return `The receipe ${this.name} will take ${this.timeToCook} ${this.timeUnit} to cook`;
-//   }
+  print() {
+    return `The receipe ${this.name} will take ${this.timeToCook} ${this.timeUnit} to cook`;
+  }
 
-//   updateCookingTime(timing = 0) {
-//     this.timeToCook = timing;
-//   }
-// }
+  updateCookingTime(timing = 0) {
+    this.timeToCook = timing;
+  }
+}
+
+const tacos = new Food("Tacos");
+console.log(tacos.name);
+const pani = new Food("Pani poori");
+console.log(pani.name);
+const rajhma = new Food("Rajhma");
+console.log(rajhma.name);
 
 // // CREATING THE INSTANCE OF THE FOOD CLASS AND CALLING THE CONSTRUCTOR FUNCTION FOR VERY FIRST TIME
 // const shawarma = new Food(

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUNCTIONS | TYPES</title>
+  </head>
+  <body>
+    <h1>Types of functions</h1>
+    <ul>
+      <li>Pure Functions</li>
+      <li>Anonymous Functions</li>
+      <li>IIFE Functions</li>
+      <li>FLAT Arrow Functions</li>
+    </ul>
+
+    <div>
+      <h3>Pure Function</h3>
+      <code> greet();<br />function greet() { return 'Hey'; } </code>
+      <ul>
+        <li>It will get hoisted</li>
+        <li>Uses <mark>function</mark> keyword</li>
+      </ul>
+    </div>
+    <div>
+      <h3>IIFE Function</h3>
+      <h5>(IMMIDIATELY INVOKING FUNCTION EXPRESSION)</h5>
+      <code> (() => { console.log('Hey') })(); </code>
+      <ul>
+        <li>It will not get hoisted</li>
+        <li>It calls itself</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Anonymous Function</h3>
+      <code> () => { console.log('Hey') } </code>
+      <ul>
+        <li>A function without a name and defination</li>
+        <li>It will not get hoisted</li>
+        <li>
+          If we need to send a function as a callbackm, then we can use
+          Anonymous function
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>FLAT Arrow Function</h3>
+      <code> const greet = () => { console.log('Hey') } </code>
+      <ul>
+        <li>It will not get hoisted</li>
+        <li>
+          If an anonymous function gets a name then it becomes FLAT Arrow
+          function
+        </li>
+      </ul>
+    </div>
+    <script src="./day3.js"></script>
+  </body>
+</html>
