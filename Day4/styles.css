@@ -1,0 +1,12 @@
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.section {
+  width: "100%";
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 0 20px 0;
+}

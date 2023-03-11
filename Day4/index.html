@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Day4 | Javascript</title>
+  </head>
+  <body>
+    <div class="section">
+        <h1>var vs let vs const</h1>
+    <p>
+      If we wanted to remember a piece of information for certain duration or
+      future use
+    </p>
+    <code> <h3>var x = 10;</h3> </code>
+    <div>
+      <h2>PROS OF VAR</h2>
+      <p>1. Hoisting - The variable declared with VAR will get hoisted</p>
+      <p>2. Will be available in all the scopes.</p>
+    </div>
+    <code> <h3>let x = 10;</h3> </code>
+    <div>
+      <h2>PROS OF LET</h2>
+      <p>1. blocked scoped variables</p>
+      <p>
+        2. Hoisting - The variable declared with LET will get hoisted
+      </p>
+      <p>
+        3. we can re-asssign the value to the variable.
+      </p>
+      <h3>CONS OF LET</h3>
+      <p>
+        1. Cannot be used before defining the variable, because they will be in
+        the TEMPORAL DEAD ZONE.
+      </p>
+    </div>
+    <h3>PROS OF CONST</h3>
+          <p>1. blocked scoped variables</p>
+    <p>
+        2. Hoisting - The variable declared with CONST will get hoisted, but will
+        not be available in GLOBAL scope which enable us to use the variable in
+        GLOBAL SCOPE.
+      </p>
+      <h3>CONS OF CONST</h3>
+      <p>
+        1. Re-assigning value to variable is not possible.
+      </p>
+      <p>
+        2. Cannot be used before defining the variable, because they will be in
+        the TEMPORAL DEAD ZONE.
+      </p>
+    </div>
+    </div>
+    <div class="section">
+<h1>Block Scoping</h1>
+    </div>
+    <div class="section">
+        <h1>spread & rest operators</h1>
+        <h4>Basicaly, Primitive & Non-Primitive is type of datatypes.</h4>
+        <h6>Primitive - When copying data into another variable will only copy value.</h6>
+        <h6>Non-Primitive - When copying data into another variable will copy the whole address.</h6>
+        <p>If i wanted to copy the data from non-primitive datatype variables to other non-primitive datatype variable we need spread operator</p>
+        <code>/*
+  
+  PRIMITIVE: String, Boolean, Number
+
+  var num1 = 10;
+  var num2 = num1;
+  num1 = 20;
+
+  console.log(num1, num2)
+*/
+
+/*
+   NON-PRIMITIVE:
+   * ARRAY
+   * OBJECT
+   * SET
+   * MAP
+*/
+
+const arr1 = [1,2,3,4];
+const arr2 = [5, 6, 7, 8];
+const mergedArray = [...arr1,...arr2]
+arr1.push(5);
+
+console.log(arr1, arr2, mergedArray);
+
+
+function sum(...num1) {
+console.log(num1)
+ const nums = num1;
+
+console.log(nums.reduce((acc, currentValue) => acc + currentValue ));
+}
+
+console.log(sum(...arr1)) // [1, 2, 3, 4, 5]</code>
+    </div>
+    <div class="section">
+        <h1>Array & object destructure</h1>
+        <h3>What is destructuring?</h3>
+        <p>helps you to get specific data from the array or object without creating multiple variables in multiple line</p>
+        <code>
+            /* 
+OLD WAY FOR GETTING THE DATA FROM ARRAY
+const name = numArray[0];
+const age = numArray[1];
+const city = numArray[2];
+const course = numArray[3]; 
+*/
+
+/*
+
+  ES6 WAY: FOR ARRAY DESTRUCTURING
+  const [name, age, city, course] = ['Ashish', 27, 'Delhi', 'Full-Stack'];
+  console.log(name, age, city, course);
+  
+*/
+
+/*
+
+  ES6 WAY: FOR OBJECT DESTRUCTURING
+  const { name, age, city, state } = {
+    name: 'Ashish',
+    age: 24,
+    city: 'Delhi',
+    state: 'haryana'
+  };
+  console.log(name, age, city, state);
+*/
+/*
+const data = {
+  name: 'Ashish',
+  age: 24,
+  city: 'Delhi',
+  state: 'haryana'
+};
+
+  OLDER APPROACH FOR GETTING DATA FROM OBJECT
+  const name = data.name;
+  const age = data.age;
+  const city = data.city;
+  const state = data.state;
+*/
+
+
+        </code>
+    </div>
+    <p>Object property shorthand</p>
+    <div class="section">
+        <h1>Template literals</h1>
+        <p>Template literals will help us to contruct the message with dynamic content in-between at any point of time</p>
+        <code>
+            // TEMPLATE LITERALS:
+
+const { firstName, secondName, age, city, state } = {
+  firstName: 'Ashish',
+  secondName: 'krunal',
+  age: 24,
+  city: 'Delhi',
+  state: 'haryana'
+};
+
+
+// CONCATINATION WAY
+const oldDescription = 'Mr. ' + firstName + secondName + ' is of ' + age + ' age comes by ' + city + ' city, from state called ' + state;
+
+// TEMPLATELITERALS WAY
+const description = `Mr.${firstName} ${secondName} is of ${age} age comes by ${city} city from state called ${state}`;
+        </code>
+    </div>
+    <div class="section">
+      <h1>Arrow function</h1>
+
+
+      <h3>Pure function</h3>
+      <ul type="I">
+        <li>Will get hoisted</li>
+        <li>Comprised of function keyword and body and</li>
+        <li>We can pass arguments</li>
+      </ul>
+      <code>
+        <b>function</b><i> greet</i>() {
+            console.log('Greet')
+        }
+      </code>
+      <h3>Arrow function</h3>
+       <h5>If an anonymous function is assigned to a variable it is called <mark>Arrow function</mark></h5>
+
+      <ul type="I">
+        <li>Will never get hoisted</li>
+        <li>Comprised of var, let or const keyword</li>
+        <li>we can pass arguments</li>
+      </ul>
+      <code>
+        <b>const</b><i> greet</i> = () => {
+            console.log('Greet')
+        }
+      </code>
+      <h3>Anonymous function</h3>
+                    <h5>A function defination without a name is called <mark>Anonymous function</mark></h5>
+      <ul type="I">
+        <li>Will never get hoisted</li>
+        <li>Comprised of var, let or const keyword</li>
+        <li>we can pass arguments</li>
+        <li>If an anonymous function is assigned to a variable it is called <mark>Arrow function</mark></li>
+        <li>unless you assign it to a variable you cant call this function</li>
+      </ul>
+      <code>
+        1. () => {
+            console.log('Greet')
+        }
+      </code>
+      <code>
+        2. function () {
+            console.log('Greet')
+        }
+      </code>
+    </div>
+  </body>
+</html>
