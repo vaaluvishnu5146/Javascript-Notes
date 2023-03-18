@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learn CSS</title>
+
+    <!-- LINKING THE STYLE.CSS TO HTML FILE -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- A. What is css?
+          
+        Cascading stylesheet - This will help us to style the HTML Presentational, Input elements
+
+        B. ways to use css:
+
+        1. Inline style
+
+        <div style="width: 100px; height: 100px; background: green;"></div>
+         
+        2. Style tags in Head section
+        
+       <head>
+
+        .circle {}
+
+        #circle-green {}
+
+       </head>
+
+        <div class="circle" id="#circle-green" ></div>
+
+
+        3. Creating style file and linking
+
+        <link rel="stylesheet" href="./styles.css" />
+
+        C: property & value 
+        Property and values are set of rules that available to style the elements of the HTML using css
+        
+        D. class vs id 
+           1. class and id are attributes of HTML Tag
+           2. It is optional to use them in all the tags
+           3. ID must be unique
+           4. We can pass multiple class names for a single tag
+
+        E. use of important:
+           Make any css rule to be not overriden at any point of time, use !important as suffix to any value;
+
+           background: red !important;
+        
+        f. display property: inline, block
+
+          1. Block - By default Div, P, Section Tags of Html is a block level element, and they will occupy the whole row no matter what is the size of the content inside it.
+          2. Inline - Width property will not be read as a valid property as inline element will occupy the size of the content.
+          3. inline-block - We can give explict width and also other content can occupy the same row if estimated size is available.
+
+        READ MORE LINK:
+        https://www.w3schools.com/html/default.asp
+        https://github.com/rvsp/html-CSS/
+
+    -->
+    <!-- INLINE CSS style -->
+    <div>
+      <div class="circle row" id="circle-1">
+        <p>Circle</p>
+      </div>
+      <div class="circle row" id="circle-2">
+        <p>Circle</p>
+      </div>
+      <!-- CREATE A CIRCLE -->
+      <div class="rectangle"><p>Rectangle</p></div>
+      <p
+        style="
+          font-size: 40px;
+          color: blue;
+          font-style: italic;
+          font-weight: bold;
+          text-decoration: line-through;
+        "
+      >
+        Test text
+      </p>
+    </div>
+    <script>
+      setTimeout(() => {
+        const circle = document.getElementById("circle-2");
+        circle.style.background = "red";
+      }, 4000);
+    </script>
+  </body>
+</html>

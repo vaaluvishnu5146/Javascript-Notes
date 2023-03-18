@@ -1,0 +1,31 @@
+/* DOT NOTATION HELP US TO SELECT THE ELEMENT AND APPLY STYLE WITH HELP OF CLASS  */
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: black;
+}
+
+#circle-1 {
+  background: yellow;
+}
+
+#circle-2 {
+  background: pink !important;
+}
+
+.rectangle {
+  width: 200px;
+  height: 200px;
+  background: yellowgreen;
+}
+
+.row {
+  display: inline-block;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
