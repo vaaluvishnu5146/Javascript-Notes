@@ -1,0 +1,153 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0px auto;
+  max-width: 760px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.rectangle {
+  width: 200px;
+  height: 200px;
+  background: yellowgreen;
+  padding: 20px;
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background: yellowgreen;
+  padding: 20px;
+}
+
+.topic-heading {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.jumbotron-sm {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  background: #c8daff;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.jumbotron-lg {
+  width: 100%;
+  height: 400px;
+  background: #d1f5c5;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.m-b-20 {
+  margin: 0 0 20px 0;
+}
+
+.m-r-20 {
+  margin: 0 20px 0 0;
+}
+
+.m-t-20 {
+  margin: 20px 0 0 0;
+}
+
+.m-l-20 {
+  margin: 0 0 0 20px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* POSITION ELEMENTS */
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.pos-sticky {
+  position: sticky;
+  top: 0;
+}
+
+.pos-static {
+  position: static;
+}
