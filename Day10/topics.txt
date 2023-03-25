@@ -1,0 +1,6 @@
+1. Overflow - hidden, scroll, auto, visible:
+2. dropbox (Drop shadow):
+3. Measurements: (px - pixels, rem - root - element unit , em - , vw, vh, %)
+4. fonts:
+5. icons 
+6. media query

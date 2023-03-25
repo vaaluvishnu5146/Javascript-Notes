@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 3 | Media queries</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        margin: 0px auto;
+        max-width: 960px;
+        width: 100%;
+        height: auto;
+        background-color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .rectangle {
+        width: 32%;
+        height: 200px;
+        background-color: aquamarine;
+      }
+
+      @media screen and (max-width: 773px) {
+        .container {
+          flex-direction: column;
+          background-color: aqua;
+        }
+        .rectangle {
+          width: 100%;
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+      <div class="rectangle"></div>
+    </div>
+  </body>
+</html>

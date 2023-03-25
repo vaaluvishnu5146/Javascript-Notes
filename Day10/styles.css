@@ -1,0 +1,33 @@
+html {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.square {
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  background-color: aquamarine;
+  overflow-y: scroll;
+}
+
+.parent {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.typography {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-style: oblique;
+  font-weight: lighter !important;
+}
