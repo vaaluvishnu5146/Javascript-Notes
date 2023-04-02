@@ -12,7 +12,7 @@ setTimeout(() => {
  */
 
 function handleSavePlayer() {
-  // STEP1: GET INPU VALUE BY ELEMENTS ID:
+  // STEP1: GET INPUTVALUE BY ELEMENTS ID:
   const input = document.getElementById("favorite_cricketer");
   const outputEl = document.getElementById("output_name");
   outputEl.innerText = input.value;

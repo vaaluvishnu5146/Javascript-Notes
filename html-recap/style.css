@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.split-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.versus-img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px, -100px);
+}
+
+/* MEDIA QUERIES: */
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .split-container {
+    width: 100%;
+  }
+}
